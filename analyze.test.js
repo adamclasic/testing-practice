@@ -14,4 +14,6 @@ test('calculate the addition', () => {
     max: 1,
     length: 1,
   });
+
+  expect(analyze([])).toEqual('the array inserted was empty');
 });

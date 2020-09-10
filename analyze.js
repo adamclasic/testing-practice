@@ -6,11 +6,13 @@ const Aaverage = (arr) => {
   return (total / arr.length);
 };
 
-const analyze = (arrr) => ({
+const analyze = (arrr) => {
+  if (arrr.length===0) {return 'the array inserted was empty'}
+  return {
   average: Aaverage(arrr),
   min: Math.min(...arrr),
   max: Math.max(...arrr),
   length: arrr.length,
-});
+}};
 
 module.exports = analyze;
