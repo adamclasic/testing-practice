@@ -7,4 +7,11 @@ test('calculate the addition', () => {
     max: 8,
     length: 6,
   });
+
+  expect(analyze([1])).toEqual({
+    average: 1,
+    min: 1,
+    max: 1,
+    length: 1,
+  });
 });
