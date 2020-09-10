@@ -24,7 +24,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/adamclasic/testing-practice">
-    <img src="./images/icon.png" alt="Logo" width="100" height="100">
+    <img src="./images/jest.png" alt="Logo" width="100" height="100">
   </a>
 
   <h3 align="center">Testing Practice</h3>
