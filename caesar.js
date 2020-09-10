@@ -1,7 +1,7 @@
 const numberiz = (str) => {
-  let arr = [];
+  const arr = [];
   str.split('').forEach(ele => {
-    let charNum = ele.charCodeAt();
+    const charNum = ele.charCodeAt();
 
     arr.push(charNum);
   });
@@ -10,25 +10,23 @@ const numberiz = (str) => {
 
 const encrypt = (arr, ratio) => {
   arr.forEach((charNum, index, theArr) => {
-    if ((charNum>= 65 && charNum<= 90) || (charNum >= 97 && charNum <= 122)){
+    if ((charNum >= 65 && charNum <= 90) || (charNum >= 97 && charNum <= 122)) {
       theArr[index] = charNum - ratio;
-    } else if (charNum>= 33 || charNum<= 63) {
+    } else if (charNum >= 33 || charNum <= 63) {
       theArr[index] = charNum - ratio;
     }
   });
   return arr;
-}
+};
 
 const charizer = (numArr) => {
-  let arr = [];
+  const arr = [];
   numArr.forEach(ele => {
     arr.push(String.fromCharCode(ele));
   });
   return arr.join('');
 };
 
-const caesar = (str, ratio) => {
-  return charizer(encrypt(numberiz(str), ratio))
-}
+const caesar = (str, ratio) => charizer(encrypt(numberiz(str), ratio));
 
 module.exports = caesar;

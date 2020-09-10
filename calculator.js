@@ -1,10 +1,8 @@
-const { mod } = require("prelude-ls")
-
 const calculator = {
-  add: (a, b) => { return a + b },
-  subtract: (a, b) => {return a-b},
-  divide: (a, b) => {return a/b},
-  multiply: (a, b) => {return a*b},
+  add: (a, b) => a + b,
+  subtract: (a, b) => a - b,
+  divide: (a, b) => a / b,
+  multiply: (a, b) => a * b,
 };
 
 module.exports = calculator;
