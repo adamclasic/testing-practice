@@ -11,10 +11,12 @@ const numberiz = (str) => {
 const encrypt = (arr, ratio) => {
   arr.forEach((charNum, index, theArr) => {
     if (charNum >= 65 && charNum <= 90) {
-      theArr[index] = (charNum - ratio) < 65 || (charNum - ratio) > 90 ? charNum - ratio + 26 : charNum - ratio;
+      theArr[index] = (charNum - ratio) < 65 || (charNum - ratio) > 90
+        ? charNum - ratio + 26 : charNum - ratio;
     } else if (charNum >= 97 && charNum <= 122) {
-      theArr[index] = (charNum - ratio) < 97 || (charNum - ratio) > 122 ? charNum - ratio + 26 : charNum - ratio;
-    };
+      theArr[index] = (charNum - ratio) < 97 || (charNum - ratio) > 122
+        ? charNum - ratio + 26 : charNum - ratio;
+    }
   });
   return arr;
 };
